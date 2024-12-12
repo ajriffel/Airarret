@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    tools:context=".MenuActivity">
+
+    <TextView
+        android:id="@+id/charSelPopup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/charSelTxt"
+        android:layout_width="243dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="91dp"
+        android:layout_marginEnd="77dp"
+        android:text="Characters:"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioCharList"
+        android:layout_width="230dp"
+        android:layout_height="243dp"
+        android:layout_marginStart="82dp"
+        android:layout_marginEnd="82dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/charSelTxt"
+        android:background="@color/lightgray">
+
+        <RadioButton
+            android:id="@+id/charSel1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Character 1"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <RadioButton
+            android:id="@+id/charSel2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Character 2"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <RadioButton
+            android:id="@+id/charSel3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Character 3"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <RadioButton
+            android:id="@+id/charSel4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Character 4"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <RadioButton
+            android:id="@+id/charSel5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Character 5"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/charSelBtn"
+        android:layout_width="230dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="5dp"
+        android:text="Select"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioCharList" />
+
+    <Button
+        android:id="@+id/charSelNewCharBtn"
+        android:layout_width="230dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="5dp"
+        android:text="New Character"
+        app:layout_constraintEnd_toEndOf="@+id/charSelBtn"
+        app:layout_constraintStart_toStartOf="@+id/charSelBtn"
+        app:layout_constraintTop_toBottomOf="@+id/charSelBtn" />
+
+    <Button
+        android:id="@+id/charSelDeleteBtn"
+        android:layout_width="230dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="5dp"
+        android:text="Delete Character"
+        app:layout_constraintEnd_toEndOf="@+id/charSelNewCharBtn"
+        app:layout_constraintStart_toStartOf="@+id/charSelNewCharBtn"
+        app:layout_constraintTop_toBottomOf="@+id/charSelNewCharBtn" />
+
+    <Button
+        android:id="@+id/charSelGoBackBtn"
+        android:layout_width="230dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="5dp"
+        android:text="Go Back"
+        app:layout_constraintEnd_toEndOf="@+id/charSelDeleteBtn"
+        app:layout_constraintStart_toStartOf="@+id/charSelDeleteBtn"
+        app:layout_constraintTop_toBottomOf="@+id/charSelDeleteBtn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

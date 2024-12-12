@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray">
+
+
+    <TextView
+        android:id="@+id/worldCreationPopup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/worldCreationCancel"
+        android:layout_width="161dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        android:text="Cancel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/worldTypeGroup" />
+
+    <Button
+        android:id="@+id/worldCreationCreateWorld"
+        android:layout_width="161dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="40dp"
+        android:text="Create World"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/worldTypeGroup" />
+
+    <RadioGroup
+        android:id="@+id/worldTypeGroup"
+        android:layout_width="205dp"
+        android:layout_height="158dp"
+        app:layout_constraintEnd_toEndOf="@+id/worldCreationTypeTxt"
+        app:layout_constraintStart_toStartOf="@+id/worldCreationTypeTxt"
+        app:layout_constraintTop_toBottomOf="@+id/worldCreationTypeTxt">
+
+        <RadioButton
+            android:id="@+id/worldTypeNormal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Normal"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <RadioButton
+            android:id="@+id/worldTypeSuperflat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Superflat"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <RadioButton
+            android:id="@+id/worldTypeCrazy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Crazy"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/worldNameTxt"
+        android:layout_width="230dp"
+        android:layout_height="68dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:backgroundTint="@color/white"
+        android:focusable="true"
+        android:hint="World Name"
+        android:textColor="@color/white"
+        android:textColorHighlight="#ff7eff15"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/worldCreationTxt"
+        app:layout_constraintStart_toStartOf="@+id/worldCreationTxt"
+        app:layout_constraintTop_toBottomOf="@+id/worldCreationTxt" />
+
+    <TextView
+        android:id="@+id/worldCreationTxt"
+        android:layout_width="222dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="95dp"
+        android:text="World Creation"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/worldCreationDiff"
+        android:layout_width="218dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="24dp"
+        android:text="World Difficulty"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/worldNameTxt"
+        app:layout_constraintStart_toStartOf="@+id/worldNameTxt"
+        app:layout_constraintTop_toBottomOf="@+id/worldNameTxt" />
+
+    <TextView
+        android:id="@+id/worldCreationTypeTxt"
+        android:layout_width="220dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="24dp"
+        android:text="World Type"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/worldDiffGroup"
+        app:layout_constraintStart_toStartOf="@+id/worldDiffGroup"
+        app:layout_constraintTop_toBottomOf="@+id/worldDiffGroup" />
+
+    <RadioGroup
+        android:id="@+id/worldDiffGroup"
+        android:layout_width="306dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/worldCreationDiff"
+        app:layout_constraintStart_toStartOf="@+id/worldCreationDiff"
+        app:layout_constraintTop_toBottomOf="@+id/worldCreationDiff">>
+
+        <RadioButton
+            android:id="@+id/easyWorldBtn"
+            android:layout_width="93dp"
+            android:layout_height="wrap_content"
+            android:text="Easy"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <RadioButton
+            android:id="@+id/normalWorldBtn"
+            android:layout_width="93dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Normal"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <RadioButton
+            android:id="@+id/hardWorldBtn"
+            android:layout_width="93dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Hard"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+    </RadioGroup>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/gray">
+
+    <EditText
+        android:id="@+id/regUsernameText"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="45dp"
+        android:focusable="true"
+        android:hint="Username"
+        android:textColorHighlight="#ff7eff15"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:backgroundTint="@color/white"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_launcher_background" />
+
+    <EditText
+        android:id="@+id/passwordText1"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_below="@+id/regUsernameText"
+        android:layout_alignEnd="@+id/regUsernameText"
+        android:layout_alignRight="@+id/regUsernameText"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="45dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColorHighlight="#ff7eff15"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:backgroundTint="@color/white"/>
+
+    <EditText
+        android:id="@+id/passwordText2"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_below="@+id/passwordText1"
+        android:layout_alignEnd="@+id/passwordText1"
+        android:layout_alignRight="@+id/passwordText1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="45dp"
+        android:ems="10"
+        android:hint="Re-enter Password"
+        android:inputType="textPassword"
+        android:textColorHighlight="#ff7eff15"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/white"/>
+
+    <Button
+        android:id="@+id/createAccBtn"
+        android:layout_width="400dp"
+        android:layout_height="75dp"
+        android:layout_alignTop="@+id/passwordText2"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="125dp"
+        android:layout_marginEnd="105dp"
+        android:layout_marginBottom="325dp"
+        android:text="create account" />
+
+    <Button
+        android:id="@+id/registerCancelBtn"
+        android:layout_width="400dp"
+        android:layout_height="75dp"
+        android:layout_alignTop="@+id/createAccBtn"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="105dp"
+        android:layout_marginBottom="140dp"
+        android:text="Cancel" />
+
+    <TextView
+        android:id="@+id/popupTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordText1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:visibility="invisible"/>
+</RelativeLayout>

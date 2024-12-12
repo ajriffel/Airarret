@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Airarret 1.0.0</string>
+    <string-array name="colors">
+        <item>Purple</item>
+        <item>Green</item>
+        <item>Light Blue</item>
+        <item>Pink</item>
+    </string-array>
+    <string-array name="resolutions">
+        <item>1920x1080</item>
+        <item>1600x900</item>
+        <item>1366x768</item>
+        <item>1280x720</item>
+    </string-array>
+</resources>

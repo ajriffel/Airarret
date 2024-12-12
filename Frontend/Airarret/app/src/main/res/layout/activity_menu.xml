@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    tools:context=".MenuActivity">
+
+    <Button
+        android:id="@+id/playBtn"
+        android:layout_width="246dp"
+        android:layout_height="87dp"
+        android:layout_marginTop="30dp"
+        android:text="Play"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/setBtn"
+        android:layout_width="247dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="15dp"
+        android:text="Settings"
+        app:layout_constraintEnd_toEndOf="@+id/playBtn"
+        app:layout_constraintStart_toStartOf="@+id/playBtn"
+        app:layout_constraintTop_toBottomOf="@+id/playBtn" />
+
+    <Button
+        android:id="@+id/friendsBtn"
+        android:layout_width="247dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="15dp"
+        android:text="Friends"
+        app:layout_constraintEnd_toEndOf="@+id/loginBtn"
+        app:layout_constraintStart_toStartOf="@+id/loginBtn"
+        app:layout_constraintTop_toBottomOf="@+id/loginBtn" />
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="247dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="15dp"
+        android:text="Log in"
+        app:layout_constraintEnd_toEndOf="@+id/setBtn"
+        app:layout_constraintStart_toStartOf="@+id/setBtn"
+        app:layout_constraintTop_toBottomOf="@+id/setBtn" />
+
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back to Main"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/friendsBtn"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/friendsBtn"
+        app:layout_constraintTop_toBottomOf="@+id/friendsBtn"
+        app:layout_constraintVertical_bias="0.30" />
+
+    <TextView
+        android:id="@+id/popupMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

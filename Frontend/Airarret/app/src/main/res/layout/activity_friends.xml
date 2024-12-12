@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray">
+
+    <EditText
+        android:id="@+id/friendText"
+        android:layout_width="320dp"
+        android:layout_height="70dp"
+        android:layout_alignEnd="@id/addFrBtn"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginBottom="21dp"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:hint="Input friend username"
+        android:inputType="textVisiblePassword"
+        android:textColor="@color/white"
+        android:textColorHighlight="#ff7eff15"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/addFrBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bkBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="158dp"
+        android:layout_marginEnd="165dp"
+        android:layout_marginBottom="92dp"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/fListBtn"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="138dp"
+        android:layout_marginTop="312dp"
+        android:layout_marginEnd="138dp"
+        android:layout_marginBottom="20dp"
+        android:rotationX="360"
+        android:text="Friends List"
+        app:layout_constraintBottom_toTopOf="@+id/bkBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/addFrBtn"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="138dp"
+        android:layout_marginEnd="138dp"
+        android:layout_marginBottom="228dp"
+        android:rotationX="360"
+        android:text="Add Friend"
+        app:layout_constraintBottom_toTopOf="@id/fListBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/popupFriends"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addFrBtn"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

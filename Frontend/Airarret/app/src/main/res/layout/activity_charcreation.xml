@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray">
+
+    <TextView
+        android:id="@+id/charCreationPopup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/charCreationActTxt"
+        android:layout_width="220dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="12dp"
+        android:text="Character Creation"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--
+    <ImageView
+        android:id="@+id/shoesIMG"
+        android:layout_width="74dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="303dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/shoesone" />
+
+    <ImageView
+        android:id="@+id/hairIMG"
+        android:layout_width="64dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/hairone" />
+
+    <ImageView
+        android:id="@+id/pantsIMG"
+        android:layout_width="74dp"
+        android:layout_height="108dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="208dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pantsone" />
+
+    <ImageView
+        android:id="@+id/skinIMG"
+        android:layout_width="137dp"
+        android:layout_height="144dp"
+        android:layout_marginTop="88dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/skinone" />
+
+    <ImageView
+        android:id="@+id/shirtIMG"
+        android:layout_width="129dp"
+        android:layout_height="142dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="109dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/shirtone" />
+        -->
+
+    <!-- START: To fit demo -->
+    <ImageView
+        android:id="@+id/shirtIMG"
+        android:layout_width="178dp"
+        android:layout_height="229dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/jack" />
+
+    <!-- END: To fit demo -->
+
+    <Button
+        android:id="@+id/charPrev"
+        android:layout_width="77dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="160dp"
+        android:text="Prev"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/charNext"
+        android:layout_width="77dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="308dp"
+        android:layout_marginTop="160dp"
+        android:text="Next"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/characterdifficultytxt"
+        android:layout_width="238dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="350dp"
+        android:text="Character Difficulty"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!-- app:layout_constraintTop_toBottomOf="@+id/shoesPrev" -->
+
+    <EditText
+        android:id="@+id/charNameTxt"
+        android:layout_width="230dp"
+        android:layout_height="68dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:backgroundTint="@color/white"
+        android:focusable="true"
+        android:hint="Character Name"
+        android:textColor="@color/white"
+        android:textColorHighlight="#ff7eff15"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/charDiffGrp" />
+
+    <Button
+        android:id="@+id/charCreationCancel"
+        android:layout_width="161dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="8dp"
+        android:text="Cancel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/charNameTxt" />
+
+    <Button
+        android:id="@+id/charCreationApply"
+        android:layout_width="161dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="40dp"
+        android:text="Create Character"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/charNameTxt" />
+
+    <!--
+    <Button
+        android:id="@+id/hairPrev"
+        android:layout_width="77dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="179dp"
+        android:layout_marginTop="88dp"
+        android:text="Prev"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/shoesNext"
+        android:layout_width="77dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="12dp"
+        android:text="Next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pantsNext" />
+
+    <TextView
+        android:id="@+id/shirtOption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:text="Shirt"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/shirtNext"
+        app:layout_constraintStart_toEndOf="@+id/shirtPrev"
+        app:layout_constraintTop_toBottomOf="@+id/skinOption" />
+
+    <Button
+        android:id="@+id/pantsNext"
+        android:layout_width="77dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="12dp"
+        android:text="Next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shirtNext" />
+
+    <Button
+        android:id="@+id/skinPrev"
+        android:layout_width="77dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="179dp"
+        android:layout_marginTop="8dp"
+        android:text="Prev"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hairPrev" />
+
+    <Button
+        android:id="@+id/skinNext"
+        android:layout_width="77dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="12dp"
+        android:text="Next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hairNext" />
+
+    <Button
+        android:id="@+id/shirtPrev"
+        android:layout_width="77dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="179dp"
+        android:layout_marginTop="8dp"
+        android:text="Prev"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/skinPrev" />
+
+
+    <TextView
+        android:id="@+id/skinOption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:text="Skin"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/skinNext"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toEndOf="@+id/skinPrev"
+        app:layout_constraintTop_toBottomOf="@+id/hairOption" />
+
+    <Button
+        android:id="@+id/shirtNext"
+        android:layout_width="77dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="12dp"
+        android:text="Next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/skinNext" />
+
+    <TextView
+        android:id="@+id/pantsOption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Pants"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/pantsNext"
+        app:layout_constraintHorizontal_bias="0.615"
+        app:layout_constraintStart_toEndOf="@+id/pantsPrev"
+        app:layout_constraintTop_toBottomOf="@+id/shirtOption" />
+
+    <TextView
+        android:id="@+id/shoesOption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:text="Shoes"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/shoesNext"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toEndOf="@+id/shoesPrev"
+        app:layout_constraintTop_toBottomOf="@+id/pantsOption" />
+
+    <Button
+        android:id="@+id/shoesPrev"
+        android:layout_width="77dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="179dp"
+        android:layout_marginTop="8dp"
+        android:text="Prev"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pantsPrev" />
+
+    <Button
+        android:id="@+id/pantsPrev"
+        android:layout_width="77dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="179dp"
+        android:layout_marginTop="8dp"
+        android:text="Prev"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shirtPrev" />
+
+    <Button
+        android:id="@+id/hairNext"
+        android:layout_width="77dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="12dp"
+        android:text="Next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/hairOption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="99dp"
+        android:text="Hair"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/hairNext"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toEndOf="@+id/hairPrev"
+        app:layout_constraintTop_toTopOf="parent" />
+        -->
+
+    <RadioGroup
+        android:id="@+id/charDiffGrp"
+        android:layout_width="306dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/characterdifficultytxt">
+
+        <RadioButton
+            android:id="@+id/easyRdBtn"
+            android:layout_width="93dp"
+            android:layout_height="wrap_content"
+            android:text="Easy"
+            android:textColor="@color/white"
+            android:textSize="20dp"/>
+
+        <RadioButton
+            android:id="@+id/normalRdBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Normal"
+            android:textColor="@color/white"
+            android:textSize="20dp"/>
+
+        <RadioButton
+            android:id="@+id/hardRdBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Hard"
+            android:textColor="@color/white"
+            android:textSize="20dp"/>
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

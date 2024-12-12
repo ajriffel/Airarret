@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    tools:context=".MenuActivity">
+
+    <TextView
+        android:id="@+id/worldSelPopup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/worldSelDelete"
+        android:layout_width="175dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="5dp"
+        android:text="Delete World"
+        app:layout_constraintEnd_toEndOf="@+id/worldSelCreateNew"
+        app:layout_constraintStart_toStartOf="@+id/worldSelCreateNew"
+        app:layout_constraintTop_toBottomOf="@+id/worldSelCreateNew" />
+
+    <Button
+        android:id="@+id/worldSelYourSel"
+        android:layout_width="175dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="5dp"
+        android:text="Select Your World"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yourWorldsList" />
+
+    <Button
+        android:id="@+id/worldSelCreateNew"
+        android:layout_width="175dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="15dp"
+        android:text="Create New World"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/worldSelYourSel" />
+
+    <Button
+        android:id="@+id/worldSelBackBtn"
+        android:layout_width="175dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="5dp"
+        android:text="Go Back"
+        app:layout_constraintEnd_toEndOf="@+id/worldSelDelete"
+        app:layout_constraintStart_toStartOf="@+id/worldSelDelete"
+        app:layout_constraintTop_toBottomOf="@+id/worldSelDelete" />
+
+    <Button
+        android:id="@+id/worldSelFriendsSel"
+        android:layout_width="175dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="18dp"
+        android:text="Select Friend's World"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+
+    <TextView
+        android:id="@+id/worldSelTxtYour"
+        android:layout_width="200dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="5dp"
+        android:text="Your Worlds"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/worldSelTxtFriends"
+        android:layout_width="200dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="5dp"
+        android:text="Friends"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/yourWorldsList"
+        android:layout_width="200dp"
+        android:layout_height="240dp"
+        android:layout_marginStart="5dp"
+        android:background="@color/lightgray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/worldSelTxtYour">
+
+        <RadioButton
+            android:id="@+id/yworldSel1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="World 1"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <RadioButton
+            android:id="@+id/yworldSel2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="World 2"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <RadioButton
+            android:id="@+id/yworldSel3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="World 3"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <RadioButton
+            android:id="@+id/yworldSel4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="World 4"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <RadioButton
+            android:id="@+id/yworldSel5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="World 5"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+    </RadioGroup>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="200dp"
+        android:layout_height="240dp"
+        android:layout_marginEnd="5dp"
+        android:scrollbarThumbVertical="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/worldSelTxtFriends">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/friendsWorldsList"
+                android:layout_width="202dp"
+                android:layout_height="960dp"
+                android:layout_marginEnd="56dp"
+                android:background="@color/lightgray">
+
+                <RadioButton
+                    android:id="@+id/fWorldSel1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="World 1"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+                <RadioButton
+                    android:id="@+id/fWorldSel2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="World 2"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+                <RadioButton
+                    android:id="@+id/fWorldSel3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="World 3"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+                <RadioButton
+                    android:id="@+id/fWorldSel4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="World 4"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+                <RadioButton
+                    android:id="@+id/fWorldSel5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="World 5"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+                <RadioButton
+                    android:id="@+id/fWorldSel6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="World 6"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+                <RadioButton
+                    android:id="@+id/fWorldSel7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="World 7"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+                <RadioButton
+                    android:id="@+id/fWorldSel8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="World 8"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+                <RadioButton
+                    android:id="@+id/fWorldSel9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="World 9"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+                <RadioButton
+                    android:id="@+id/fWorldSel10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="World 10"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+                <RadioButton
+                    android:id="@+id/fWorldSel11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="World 11"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+                <RadioButton
+                    android:id="@+id/fWorldSel12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="World 12"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+                <RadioButton
+                    android:id="@+id/fWorldSel13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="World 13"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+                <RadioButton
+                    android:id="@+id/fWorldSel14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="World 14"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+                <RadioButton
+                    android:id="@+id/fWorldSel15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="World 15"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+                <RadioButton
+                    android:id="@+id/fWorldSel16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="World 16"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+                <RadioButton
+                    android:id="@+id/fWorldSel17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="World 17"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+                <RadioButton
+                    android:id="@+id/fWorldSel18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="World 18"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+                <RadioButton
+                    android:id="@+id/fWorldSel19"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="World 19"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+                <RadioButton
+                    android:id="@+id/fWorldSel20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="World 20"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+            </RadioGroup>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

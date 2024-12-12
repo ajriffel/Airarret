@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/HW/COM S 309/2_an_8/Frontend/Airarret/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.286" />
+        <entry key="..\:/HW/COM S 309/2_an_8/Frontend/Airarret/app/src/main/res/drawable/ic_launcher_background.xml" value="0.286" />
+        <entry key="..\:/HW/COM S 309/2_an_8/Frontend/Airarret/app/src/main/res/layout/activity_charcreation.xml" value="0.2695035460992908" />
+        <entry key="..\:/HW/COM S 309/2_an_8/Frontend/Airarret/app/src/main/res/layout/activity_charsel.xml" value="0.2695035460992908" />
+        <entry key="..\:/HW/COM S 309/2_an_8/Frontend/Airarret/app/src/main/res/layout/activity_friendlist.xml" value="0.3365036231884058" />
+        <entry key="..\:/HW/COM S 309/2_an_8/Frontend/Airarret/app/src/main/res/layout/activity_friends.xml" value="0.3365036231884058" />
+        <entry key="..\:/HW/COM S 309/2_an_8/Frontend/Airarret/app/src/main/res/layout/activity_login.xml" value="0.3365036231884058" />
+        <entry key="..\:/HW/COM S 309/2_an_8/Frontend/Airarret/app/src/main/res/layout/activity_main.xml" value="0.3365036231884058" />
+        <entry key="..\:/HW/COM S 309/2_an_8/Frontend/Airarret/app/src/main/res/layout/activity_menu.xml" value="0.3365036231884058" />
+        <entry key="..\:/HW/COM S 309/2_an_8/Frontend/Airarret/app/src/main/res/layout/activity_play.xml" value="0.3365036231884058" />
+        <entry key="..\:/HW/COM S 309/2_an_8/Frontend/Airarret/app/src/main/res/layout/activity_register.xml" value="0.3365036231884058" />
+        <entry key="..\:/HW/COM S 309/2_an_8/Frontend/Airarret/app/src/main/res/layout/activity_settings.xml" value="0.3365036231884058" />
+        <entry key="..\:/HW/COM S 309/2_an_8/Frontend/Airarret/app/src/main/res/layout/activity_worldcreation.xml" value="0.2695035460992908" />
+        <entry key="..\:/HW/COM S 309/2_an_8/Frontend/Airarret/app/src/main/res/layout/activity_worldsel.xml" value="0.2695035460992908" />
+        <entry key="..\:/HW/COM S 309/2_an_8/Frontend/Airarret/app/src/main/res/layout/spinner_header.xml" value="0.3365036231884058" />
+        <entry key="..\:/HW/COM S 309/2_an_8/Frontend/Airarret/app/src/main/res/layout/spinner_list.xml" value="0.2695035460992908" />
+        <entry key="..\:/Users/Dillon/2_an_8/Experiments/Dillon_Gesy/android-loginExp/login-register/app/src/main/res/layout/activity_friends.xml" value="0.17831813576494426" />
+        <entry key="..\:/Users/Dillon/2_an_8/Experiments/Dillon_Gesy/android-loginExp/login-register/app/src/main/res/layout/activity_login.xml" value="0.1" />
+        <entry key="..\:/Users/Dillon/2_an_8/Experiments/Dillon_Gesy/android-loginExp/login-register/app/src/main/res/layout/activity_main.xml" value="0.22780797101449277" />
+        <entry key="..\:/Users/Dillon/2_an_8/Experiments/Dillon_Gesy/android-loginExp/login-register/app/src/main/res/layout/activity_menu.xml" value="0.17831813576494426" />
+        <entry key="..\:/Users/Dillon/2_an_8/Experiments/Dillon_Gesy/android-loginExp/login-register/app/src/main/res/layout/activity_play.xml" value="0.17831813576494426" />
+        <entry key="..\:/Users/Dillon/2_an_8/Experiments/Dillon_Gesy/android-loginExp/login-register/app/src/main/res/layout/activity_register.xml" value="0.17831813576494426" />
+        <entry key="..\:/Users/Dillon/2_an_8/Experiments/Dillon_Gesy/android-loginExp/login-register/app/src/main/res/layout/activity_settings.xml" value="0.25" />
+        <entry key="..\:/Users/Dillon/2_an_8/Experiments/Dillon_Gesy/android-loginExp/login-register/app/src/main/res/layout/spinner_list.xml" value="0.17831813576494426" />
+        <entry key="..\:/Users/Dillon/2_an_8/Experiments/Dillon_Gesy/android-switchExp/tutorial/switch_lock/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.226" />
+        <entry key="..\:/Users/Dillon/2_an_8/Experiments/Dillon_Gesy/android-switchExp/tutorial/switch_lock/app/src/main/res/drawable/ic_launcher_background.xml" value="0.226" />
+        <entry key="..\:/Users/Dillon/2_an_8/Experiments/Dillon_Gesy/android-switchExp/tutorial/switch_lock/app/src/main/res/layout/activity_counter.xml" value="0.22780797101449277" />
+        <entry key="..\:/Users/Dillon/2_an_8/Experiments/Dillon_Gesy/android-switchExp/tutorial/switch_lock/app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/Users/Dillon/2_an_8/Experiments/Dillon_Gesy/android-switchExp/tutorial/switch_lock/app/src/main/res/layout/activity_main.xml" value="0.22780797101449277" />
+        <entry key="..\:/Users/Dillon/2_an_8/Experiments/Dillon_Gesy/android-switchExp/tutorial/switch_lock/app/src/main/res/layout/activity_register.xml" value="0.22780797101449277" />
+        <entry key="..\:/Users/Dillon/2_an_8/Experiments/Dillon_Gesy/tutorial/two_screen_counter/app/src/main/res/layout/activity_counter.xml" value="0.22780797101449277" />
+        <entry key="..\:/Users/Dillon/2_an_8/Experiments/Dillon_Gesy/tutorial/two_screen_counter/app/src/main/res/layout/activity_friends.xml" value="0.22780797101449277" />
+        <entry key="..\:/Users/Dillon/2_an_8/Experiments/Dillon_Gesy/tutorial/two_screen_counter/app/src/main/res/layout/activity_main.xml" value="0.22780797101449277" />
+        <entry key="..\:/Users/Dillon/2_an_8/Experiments/Dillon_Gesy/tutorial/two_screen_counter/app/src/main/res/layout/activity_play.xml" value="0.22780797101449277" />
+        <entry key="..\:/Users/Dillon/2_an_8/Experiments/Dillon_Gesy/tutorial/two_screen_counter/app/src/main/res/layout/activity_settings.xml" value="0.22780797101449277" />
+        <entry key="..\:/Users/Dillon/2_an_8/Frontend/Airarret/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3405" />
+        <entry key="..\:/Users/Dillon/2_an_8/Frontend/Airarret/app/src/main/res/layout/AndroidManifest.xml" value="0.35208333333333336" />
+        <entry key="..\:/Users/Dillon/2_an_8/Frontend/Airarret/app/src/main/res/layout/activity_charcreation.xml" value="0.33" />
+        <entry key="..\:/Users/Dillon/2_an_8/Frontend/Airarret/app/src/main/res/layout/activity_charsel.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Dillon/2_an_8/Frontend/Airarret/app/src/main/res/layout/activity_friendlist.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Dillon/2_an_8/Frontend/Airarret/app/src/main/res/layout/activity_friends.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Dillon/2_an_8/Frontend/Airarret/app/src/main/res/layout/activity_login.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Dillon/2_an_8/Frontend/Airarret/app/src/main/res/layout/activity_menu.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Dillon/2_an_8/Frontend/Airarret/app/src/main/res/layout/activity_settings.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Dillon/2_an_8/Frontend/Airarret/app/src/main/res/layout/activity_worldcreation.xml" value="0.2" />
+        <entry key="..\:/Users/Dillon/2_an_8/Frontend/Airarret/app/src/main/res/layout/activity_worldsel.xml" value="0.12537993920972645" />
+        <entry key="..\:/Users/Dillon/AppData/Local/Android/Sdk/platforms/android-31/data/res/layout/simple_spinner_dropdown_item.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Dillon/Desktop/menu_screen/app/src/main/res/layout/activity_play.xml" value="0.22780797101449277" />
+        <entry key="..\:/Users/Dillon/Desktop/menu_screen/app/src/main/res/layout/activity_settings.xml" value="0.22780797101449277" />
+        <entry key="..\:/Users/Dillon/Desktop/menu_screen/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.226" />
+        <entry key="..\:/Users/Dillon/Desktop/menu_screen/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.226" />
+        <entry key="..\:/Users/Dillon/Desktop/switch_lock/app/src/main/res/layout/activity_play.xml" value="0.22780797101449277" />
+        <entry key="..\:/Users/Dillon/Desktop/switch_lock/app/src/main/res/layout/activity_settings.xml" value="0.22780797101449277" />
+        <entry key="..\:/Users/Dillon/Desktop/tutorials-android_unit1_1_two_screen_counter/two_screen_counter/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.226" />
+        <entry key="..\:/Users/Dillon/Desktop/tutorials-android_unit1_1_two_screen_counter/two_screen_counter/app/src/main/res/drawable/ic_launcher_background.xml" value="0.226" />
+        <entry key="..\:/Users/Dillon/Desktop/tutorials-android_unit1_1_two_screen_counter/two_screen_counter/app/src/main/res/layout/activity_counter.xml" value="0.22780797101449277" />
+        <entry key="..\:/Users/Dillon/Desktop/tutorials-android_unit1_1_two_screen_counter/two_screen_counter/app/src/main/res/layout/activity_main.xml" value="0.22780797101449277" />
+        <entry key="..\:/Users/hobian/Desktop/309/checkpoints/AS1/app/src/main/res/layout/activity_counter.xml" value="0.5213541666666667" />
+        <entry key="..\:/Users/hobian/Desktop/309/checkpoints/AS1/app/src/main/res/layout/activity_main.xml" value="0.5213541666666667" />
+        <entry key="..\:/Users/miner/2_an_8/Experiments/Dillon_Gesy/android-loginExp/login-register/app/src/main/res/layout/activity_login.xml" value="0.1" />
+        <entry key="..\:/Users/miner/2_an_8/Experiments/Dillon_Gesy/android-loginExp/login-register/app/src/main/res/layout/activity_register.xml" value="0.1" />
+        <entry key="..\:/Users/miner/2_an_8/Frontend/Airarret/app/src/main/res/layout/activity_login.xml" value="0.1431159420289855" />
+        <entry key="..\:/Users/miner/2_an_8/Frontend/Airarret/app/src/main/res/layout/activity_menu.xml" value="0.176" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
